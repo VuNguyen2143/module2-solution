@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+h2 {
+margin-bottom: 30px;
+text-align: center;
+}
+div.relative {
+background-color: darkgrey;
+  padding: 60px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  border: 3px solid black;
+  margin-top: 60px;
+  font-size: large;
+} 
+
+div.absolute {
+  position: absolute;
+ bottom: 166px;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  border: 3px solid black;
+  text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   background-color: pink;
+}
+div.relative1 {
+background-color: lightgrey;
+  padding: 60px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  border: 3px solid black;
+  margin-top: 60px;
+ font-size: large;
+} 
+
+div.absolute1 {
+  position: absolute;
+ bottom: 166px;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  border: 3px solid black;
+  text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   background-color: red;
+ 
+   
+}
+div.relative2 {
+background-color: lightgrey;
+  padding: 60px;
+  margin: 20px;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  border: 3px solid black;
+  margin-top: 60px;
+  font-size: large;
+} 
+
+div.absolute2 {
+  position: absolute;
+ bottom: 166px;
+  right: 0;
+  width: 100px;
+  height: 40px;
+  border: 3px solid black;
+  text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: large;
+   background-color: yellow;
+}
+.relative {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.relative1 {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+.relative2 {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (min-width: 992px) {
+  .relative, .relative1, .relative2 {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  }
+  @media screen and (max-width: 767px) {
+  .relative, .relative1, .relative2 {
+    width: 100%;
+}
+}
+@media (min-width: 992px) and (max-width: 768px) {
+  .relative, .relative1, .relative2 {
+    width: 90%;
+    height: 70%;
+
+</style>
+</head>
+<body>
+
+<h2>Our Menu</h2>
+
+
+<div class="relative">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <div class="absolute">chicken</div>
+</div>
+<div class="relative1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  <div class="absolute1" style="color: white;">beef</div>
+</div>
+<div class="relative2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  <div class="absolute2">sushi</div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
